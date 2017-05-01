@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/Calculator2/inc/7seg.h" element2="/Calculator2/inc/Calculator2.c" element3="/Calculator2/inc/helper_functions.h" element4="/Calculator2/inc/keypad.h" element5="/Calculator2/inc/led_button.h" element6="/Calculator2/inc/stm32l476xx.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1492572479162"/>
+</session>

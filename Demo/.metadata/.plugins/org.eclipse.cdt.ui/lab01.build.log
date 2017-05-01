@@ -1,0 +1,35 @@
+11:46:36 **** Build of configuration Debug for project lab01 ****
+make all 
+'Building file: ../startup/startup_stm32.s'
+'Invoking: MCU GCC Assembler'
+C:\Users\USER\workspace\lab01\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"C:/Users/USER/workspace/lab01/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+'Finished building: ../startup/startup_stm32.s'
+' '
+'Building file: ../startup/sysmem.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\lab01\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/lab01/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+'Finished building: ../startup/sysmem.c'
+' '
+'Building file: ../src/main.s'
+'Invoking: MCU GCC Assembler'
+C:\Users\USER\workspace\lab01\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"C:/Users/USER/workspace/lab01/inc" -g -o "src/main.o" "../src/main.s"
+'Finished building: ../src/main.s'
+' '
+'Building target: lab01.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\lab01\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "lab01.elf" @"objects.list"  
+'Finished building target: lab01.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "lab01.elf" "lab01.bin"
+arm-none-eabi-size "lab01.elf"
+   text	   data	    bss	    dec	    hex	filename
+    920	   1080	   1056	   3056	    bf0	lab01.elf
+' '
+
+11:46:37 Build Finished (took 656ms)
+

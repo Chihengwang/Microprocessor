@@ -1,0 +1,23 @@
+11:34:18 **** Incremental Build of configuration Debug for project dede ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\dede\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/dede/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: dede.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\dede\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "dede.elf" @"objects.list"  
+'Finished building target: dede.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "dede.elf" "dede.bin"
+arm-none-eabi-size "dede.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4128	   1080	   1056	   6264	   1878	dede.elf
+' '
+
+11:34:19 Build Finished (took 877ms)
+

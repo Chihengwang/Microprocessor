@@ -1,0 +1,23 @@
+12:15:21 **** Incremental Build of configuration Debug for project 7seg ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\7seg\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/7seg/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: 7seg.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\7seg\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "7seg.elf" @"objects.list"  
+'Finished building target: 7seg.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "7seg.elf" "7seg.bin"
+arm-none-eabi-size "7seg.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1720	   1080	   1056	   3856	    f10	7seg.elf
+' '
+
+12:15:22 Build Finished (took 675ms)
+

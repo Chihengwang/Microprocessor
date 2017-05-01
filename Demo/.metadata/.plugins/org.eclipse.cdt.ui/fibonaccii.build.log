@@ -1,0 +1,23 @@
+18:25:32 **** Incremental Build of configuration Debug for project fibonaccii ****
+make all 
+'Building file: ../src/fibonaccii.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\fibonaccii\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/fibonaccii/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/fibonaccii.d" -MT"src/fibonaccii.o" -o "src/fibonaccii.o" "../src/fibonaccii.c"
+'Finished building: ../src/fibonaccii.c'
+' '
+'Building target: fibonaccii.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\fibonaccii\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "fibonaccii.elf" @"objects.list"  
+'Finished building target: fibonaccii.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "fibonaccii.elf" "fibonaccii.bin"
+arm-none-eabi-size "fibonaccii.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5152	   1080	   1056	   7288	   1c78	fibonaccii.elf
+' '
+
+18:25:32 Build Finished (took 665ms)
+

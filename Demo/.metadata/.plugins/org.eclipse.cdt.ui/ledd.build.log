@@ -1,0 +1,6 @@
+12:05:04 **** Incremental Build of configuration Debug for project ledd ****
+make all 
+make: Nothing to be done for `all'.
+
+12:05:04 Build Finished (took 78ms)
+

@@ -1,0 +1,51 @@
+13:04:23 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:306:6: warning: unused variable 'gg' [-Wunused-variable]
+  int gg=0;
+      ^
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5104	   1080	   1056	   7240	   1c48	Calculator.elf
+' '
+
+13:04:24 Build Finished (took 667ms)
+

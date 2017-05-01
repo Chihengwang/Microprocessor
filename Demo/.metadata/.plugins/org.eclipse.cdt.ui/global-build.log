@@ -1,0 +1,1519 @@
+11:30:02 **** Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../startup/startup_stm32.s'
+'Invoking: MCU GCC Assembler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -I"C:/Users/USER/workspace/Calculator/inc" -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+'Finished building: ../startup/startup_stm32.s'
+' '
+'Building file: ../startup/sysmem.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+'Finished building: ../startup/sysmem.c'
+' '
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6544	   1080	   1056	   8680	   21e8	Calculator.elf
+' '
+11:30:13 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+make: Nothing to be done for `all'.
+11:35:08 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6536	   1080	   1056	   8672	   21e0	Calculator.elf
+' '
+11:43:02 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:301:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:300:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:299:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4680	   1080	   1056	   6816	   1aa0	Calculator.elf
+' '
+11:44:14 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:301:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:300:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:299:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4680	   1080	   1056	   6816	   1aa0	Calculator.elf
+' '
+11:44:56 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:301:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:300:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:299:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4664	   1080	   1056	   6800	   1a90	Calculator.elf
+' '
+11:46:55 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:301:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:300:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:299:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4664	   1080	   1056	   6800	   1a90	Calculator.elf
+' '
+11:49:07 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:301:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:300:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:299:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:298:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:296:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:295:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:293:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:292:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4664	   1080	   1056	   6800	   1a90	Calculator.elf
+' '
+11:51:20 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4672	   1080	   1056	   6808	   1a98	Calculator.elf
+' '
+11:52:11 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4672	   1080	   1056	   6808	   1a98	Calculator.elf
+' '
+12:01:51 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4776	   1080	   1056	   6912	   1b00	Calculator.elf
+' '
+12:02:38 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4784	   1080	   1056	   6920	   1b08	Calculator.elf
+' '
+12:06:25 **** Incremental Build of configuration Debug for project Calculator2 ****
+make all 
+make: Nothing to be done for `all'.
+12:07:53 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4776	   1080	   1056	   6912	   1b00	Calculator.elf
+' '
+12:08:18 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4776	   1080	   1056	   6912	   1b00	Calculator.elf
+' '
+12:13:41 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4920	   1080	   1056	   7056	   1b90	Calculator.elf
+' '
+12:17:46 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4936	   1080	   1064	   7080	   1ba8	Calculator.elf
+' '
+12:19:28 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: unused variable 'answer' [-Wunused-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: unused variable 'result' [-Wunused-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: unused variable 'error' [-Wunused-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: unused variable 'op' [-Wunused-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: unused variable 'num' [-Wunused-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: unused variable 'ops' [-Wunused-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: unused variable 'nums' [-Wunused-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4936	   1080	   1064	   7080	   1ba8	Calculator.elf
+' '
+12:22:39 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5216	   1080	   1064	   7360	   1cc0	Calculator.elf
+' '
+12:24:22 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5216	   1080	   1064	   7360	   1cc0	Calculator.elf
+' '
+12:25:18 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5216	   1080	   1064	   7360	   1cc0	Calculator.elf
+' '
+12:30:03 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5264	   1080	   1064	   7408	   1cf0	Calculator.elf
+' '
+12:32:02 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5240	   1080	   1064	   7384	   1cd8	Calculator.elf
+' '
+12:33:20 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5248	   1080	   1056	   7384	   1cd8	Calculator.elf
+' '
+12:35:19 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:442:13: warning: type defaults to 'int' in declaration of 'i' [-Wimplicit-int]
+      static i,j;
+             ^
+../src/Calculator.c:442:15: warning: type defaults to 'int' in declaration of 'j' [-Wimplicit-int]
+      static i,j;
+               ^
+../src/Calculator.c:454:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+make: *** [src/Calculator.o] Error 1
+12:36:09 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:454:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+make: *** [src/Calculator.o] Error 1
+12:36:17 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5128	   1080	   1064	   7272	   1c68	Calculator.elf
+' '
+12:39:06 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5128	   1080	   1064	   7272	   1c68	Calculator.elf
+' '
+12:41:02 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5160	   1080	   1064	   7304	   1c88	Calculator.elf
+' '
+12:41:57 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5152	   1080	   1056	   7288	   1c78	Calculator.elf
+' '
+12:44:19 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5152	   1080	   1056	   7288	   1c78	Calculator.elf
+' '
+12:47:35 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5152	   1080	   1056	   7288	   1c78	Calculator.elf
+' '
+12:48:34 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5120	   1080	   1056	   7256	   1c58	Calculator.elf
+' '
+12:50:34 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5112	   1080	   1056	   7248	   1c50	Calculator.elf
+' '
+12:52:42 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5120	   1080	   1056	   7256	   1c58	Calculator.elf
+' '
+13:04:23 **** Incremental Build of configuration Debug for project Calculator ****
+make all 
+'Building file: ../src/Calculator.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\USER\workspace\Calculator\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DSTM32 -DDEBUG -I"C:/Users/USER/workspace/Calculator/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/Calculator.d" -MT"src/Calculator.o" -o "src/Calculator.o" "../src/Calculator.c"
+../src/Calculator.c: In function 'main':
+../src/Calculator.c:306:6: warning: unused variable 'gg' [-Wunused-variable]
+  int gg=0;
+      ^
+../src/Calculator.c:303:6: warning: variable 'answer' set but not used [-Wunused-but-set-variable]
+  int answer=0;
+      ^
+../src/Calculator.c:302:6: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+  int result=0;
+      ^
+../src/Calculator.c:301:6: warning: variable 'error' set but not used [-Wunused-but-set-variable]
+  int error=0;
+      ^
+../src/Calculator.c:300:6: warning: variable 'fuckyou' set but not used [-Wunused-but-set-variable]
+  int fuckyou=1;
+      ^
+../src/Calculator.c:298:6: warning: variable 'op' set but not used [-Wunused-but-set-variable]
+  int op=0;
+      ^
+../src/Calculator.c:297:6: warning: variable 'num' set but not used [-Wunused-but-set-variable]
+  int num=0;
+      ^
+../src/Calculator.c:295:9: warning: variable 'ops' set but not used [-Wunused-but-set-variable]
+  double ops[99]={};
+         ^
+../src/Calculator.c:294:9: warning: variable 'nums' set but not used [-Wunused-but-set-variable]
+  double nums[100]={};
+         ^
+'Finished building: ../src/Calculator.c'
+' '
+'Building target: Calculator.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\USER\workspace\Calculator\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Calculator.elf" @"objects.list"  
+'Finished building target: Calculator.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Calculator.elf" "Calculator.bin"
+arm-none-eabi-size "Calculator.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5104	   1080	   1056	   7240	   1c48	Calculator.elf
+' '
